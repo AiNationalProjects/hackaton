@@ -127,7 +127,7 @@ async def sendGet(message: types.Message):
 
                         remove(fontsTrust[0])
                     else:
-                        await message.answer_photo(photoPeople, f"❗️ На фотографии не должно присутствовать людей")
+                        await message.answer_photo(photoPeople, f"❗️ Обнаружено некорректное брендирование национального проекта (на фотографии не должно присутствовать людей)")
                     
                     remove(peopleTrust[0])
                 else:
